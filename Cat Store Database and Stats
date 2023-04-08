@@ -1,0 +1,24 @@
+CREATE TABLE cat_store (id integer primary key, name TEXT, quantity INTEGER, color TEXT, size TEXT, price INTEGER);
+
+INSERT INTO cat_store VALUES
+(1, 'Bunny', 3, 'white black', 'M', 29.99),
+(2, 'Hunter', 17, 'brown', 'L', 39.99),
+(3, 'Kai', 18, 'black', 'L', 39.99),
+(4, 'Muki', 2, 'black white', 'M', 29.99),
+(5, 'Johann', 5, 'grey', 'L', 39.99),
+(6, 'Conan', 1, 'red', 'L', 39.99),
+(7, 'Segundo', 8, 'grey', 'M', 29.99),
+(8, 'Pequeno', 22, 'white', 'S', 19.99),
+(9, 'Hermina', 3, 'calico', 'M', 29.99),
+(10, 'Legolas', 14, 'orange', 'S', 19.99),
+(11, 'Jack', 10, 'red', 'L', 39.99),
+(12, 'Leonard', 2, 'black', 'M', 29.99),
+(13, 'Monty', 6, 'white', 'S', 19.99),
+(14, 'Shrek', 19, 'green', 'L', 39.99),
+(15, 'Primo', 9, 'grey black', 'S', 19.99);
+
+SELECT * FROM cat_store;
+
+SELECT * FROM cat_store ORDER BY price desc;
+
+SELECT SUM(price) from cat_store;
